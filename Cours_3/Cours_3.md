@@ -89,7 +89,9 @@ C'est le moment de me dire s'il y a des aspects que vous voulez revoir en reactJ
 ## Projet reactJs
 
 Vous allez maintenant devoir réaliser un projet en reactJS. 
+
 Ce projet est à réaliser seul.
+
 Vous aurez la grille d'évaluation dans le dossier github ainsi que l'énoncé du projet. 
 
 Quelques informations supplémentaires : 
