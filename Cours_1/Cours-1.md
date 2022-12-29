@@ -1,35 +1,44 @@
-# Le reactJS
-React (également connu sous le nom de React.js ou ReactJS) est une bibliothèque JavaScript open-source utilisée pour créer des interfaces utilisateur (UI). Il a été développé par Facebook et a été rendu disponible pour la première fois en 2013.
+# Le reactJS 📚
 
-React est principalement utilisé pour créer des applications web, mais il peut également être utilisé pour créer des applications mobiles en utilisant des frameworks tels que React Native.
+Pour commencer qu'est ce que le "React" (également connu sous le nom de React.js ou ReactJS) ? 
 
-React s'appuie sur l'idée de rendu de composants, ce qui signifie que vous pouvez créer des "composants" réutilisables de UI qui peuvent être combinés pour créer des interfaces utilisateur plus complexes. Chaque composant a son propre état et peut être mis à jour indépendamment des autres composants. Cela rend le développement d'applications plus facile et plus efficace, car vous pouvez mettre à jour des parties spécifiques de votre interface utilisateur sans avoir à recharger la page entière.
+C'est une bibliothèque JavaScript open-source utilisée pour créer des interfaces utilisateur (UI). Il a été développé par Facebook et a été rendu disponible pour la première fois en 2013.
 
-React est également connu pour sa performance élevée grâce à son utilisation de différentes techniques de mise à jour de l'UI de manière optimisée. Il utilise également un DOM virtuel (un arbre de données qui représente l'interface utilisateur), ce qui permet de minimiser le nombre de modifications apportées au DOM réel (qui est ce qui est affiché dans le navigateur) et de réduire ainsi les temps de chargement et les exigences de mémoire.
+- Principalement utilisé pour créer des applications web 🖥, mais il peut également être utilisé pour créer des applications mobiles 📱 en utilisant des frameworks tels que React Native.
 
-En résumé, React est une bibliothèque JavaScript populaire utilisée pour créer des interfaces utilisateur réactives et performantes pour les applications web et mobiles.
+- Il s'appuie sur l'idée de rendu de composants, ce qui signifie que vous pouvez créer des "composants" réutilisables de UI qui peuvent être combinés pour créer des interfaces utilisateur plus complexes. Chaque composant a son propre état et peut être mis à jour indépendamment des autres composants. Cela rend le développement d'applications plus facile et plus efficace, car vous pouvez mettre à jour des parties spécifiques de votre interface utilisateur sans avoir à recharger la page entière.
 
+- React est également connu pour sa performance élevée grâce à son utilisation de différentes techniques de mise à jour de l'UI de manière optimisée. Il utilise également un DOM virtuel (un arbre de données qui représente l'interface utilisateur), ce qui permet de minimiser le nombre de modifications apportées au DOM réel (qui est ce qui est affiché dans le navigateur) et de réduire ainsi les temps de chargement et les exigences de mémoire 📉.
+
+Donc en résumé, React est une bibliothèque JavaScript populaire utilisée pour créer des interfaces utilisateur réactives et performantes pour les applications web et mobiles.
+
+---
 ## Pré-requis (20 min)
 
 1. Un ide sachant reconnaitre reactJS (Visual studio code par exemple) 
 
 2. Assurez-vous de disposer d’une version installée de Node.js (https://nodejs.org/fr/) suffisamment récente.
 
-3. Ajouter NVM, cela vous permettra de pouvoir naviguer entre différents projets ayant une version de node différente
+3. Ajouter NVM (node version manager), cela vous permettra de pouvoir naviguer entre différents projets ayant une version de node différente
 
+---
 ## Ce que vous devez connaitre
 
-  1. JSX : JSX (JavaScript XML) est une syntaxe qui permet de mélanger du code HTML et du JavaScript dans les fichiers de votre application React. C'est ce qui vous permet de créer des composants de UI en utilisant du code HTML-like dans vos fichiers JavaScript.
+  1. Le JSX (JavaScript XML) est une syntaxe qui permet de mélanger du code HTML et du JavaScript dans les fichiers de votre application React. C'est ce qui vous permet de créer des composants de UI en utilisant du code HTML-like dans vos fichiers JavaScript.
 
-  2. Composants : les composants sont la pierre angulaire de React. Ils sont des blocs de code réutilisables qui représentent une partie de votre interface utilisateur. Vous pouvez créer des composants en utilisant des fonctions ou des classes, et chaque composant a son propre état et méthodes de rendu.
+  2. Les composants sont la pierre angulaire de React. Ils sont des blocs de code réutilisables qui représentent une partie de votre interface utilisateur. Vous pouvez créer des composants en utilisant des fonctions ou des classes, et chaque composant a son propre état et méthodes de rendu.
 
-  3. Props : les props (short pour "propriétés") sont des arguments passés à un composant lors de son utilisation. Ils permettent de passer des données à un composant depuis l'extérieur et de les utiliser dans le code du composant.
+  3. Les props (short pour "propriétés") sont des arguments passés à un composant lors de son utilisation. Ils permettent de passer des données à un composant depuis l'extérieur et de les utiliser dans le code du composant.
 
-  4. State : State est une propriété d'un composant qui contient des données qui peuvent être utilisées dans le rendu du composant. Une State peut être modifié à l'intérieur du composant et peut déclencher une mise à jour de l'interface utilisateur lorsqu'il est modifié.
+  4. State est une propriété d'un composant qui contient des données qui peuvent être utilisées dans le rendu du composant. Une State peut être modifié à l'intérieur du composant et peut déclencher une mise à jour de l'interface utilisateur lorsqu'il est modifié.
 
   5. Cycle de vie : chaque composant de React a un cycle de vie qui décrit les différentes étapes qu'il traverse depuis sa création jusqu'à sa suppression. Comprendre comment fonctionne le cycle de vie des composants peut vous aider à mieux gérer votre application et à écrire du code plus efficace.
-
+---
 ## C'est parti
+
+![Alt Text](https://media.giphy.com/media/5jYt43Rzz83SeKR4oU/giphy.gif)
+
+
 ### Création d'un projet (15 min)
 
 ```shell
@@ -72,9 +81,12 @@ function MyComponent() {
 
 export default MyComponent;
 ```
+
 Dans cet exemple, `MyComponent` est une fonction qui renvoie un élément div avec un titre et un paragraphe. Les déclarations d'importation et d'exportation en haut et en bas du fichier permettent d'utiliser le composant dans d'autres parties de l'application.
 
-Pour utiliser un composant dans une application React, vous pouvez l'importer, puis le rendre à l'aide de la syntaxe JSX, qui est une extension syntaxique pour JavaScript permettant d'écrire du code de type HTML dans vos fichiers JavaScript. Voici un exemple de la façon dont vous pouvez utiliser le composant `MyComponent` dans une application React :
+Pour utiliser un composant dans une application React, vous pouvez l'importer, puis le rendre à l'aide de la syntaxe JSX, qui est une extension syntaxique pour JavaScript permettant d'écrire du code de type HTML dans vos fichiers JavaScript. 
+
+Voici un exemple de la façon dont vous pouvez utiliser le composant `MyComponent` dans une application React :
 
 ```js
 import React from 'react';
@@ -327,7 +339,9 @@ Supplément :
 
 ```
 
+![Alt Text](https://media.giphy.com/media/MIlFrmkPJDvec6qSzl/giphy.gif)
 
+---
 ## Pour le cours suivant 
 
 Nous avons vu précédemment `useState` qui est un hook, il existe une multitude de hook.
