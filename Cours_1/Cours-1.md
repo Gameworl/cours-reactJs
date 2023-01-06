@@ -435,6 +435,31 @@ Supplément :
 ![Alt Text](https://media.giphy.com/media/MIlFrmkPJDvec6qSzl/giphy.gif)
 
 ---
+
+## Un projet fonctionel
+
+
+Il arrive quelques fois qu'un projet soit inutilisable suite à des erreurs dans certains fichiers ou des mauvaises manipulations.
+
+Par exemple, prenons notre projet tictactoe, un de mes collègues me l'a envoyer, mais je ne peux pas le lancer à cause de plusieurs erreurs.
+
+```diff
++ Faites le nécessaire pour que le projet fonctionne et indique les erreurs que vous avez trouvées. 
+```
+
+Pour qu'il soit compréhensible, nous allons appliquer ce qu'on appelle des bonnes pratiques.
+Il existe une multitude de bonnes pratiques, elles servent à produire un code de qualité et à faire en sorte que le projet soit compréhensible et maintenable. 
+
+```diff
++ Lister les principales bonnes pratiques en reactJS (5 minimums)
+
++ Appliquer les bonnes pratiques que vous avez sélectionnées au projet tictactoe
+
++ Quel constat avez-vous fait sur le projet une fois que les bonnes pratiques ont été appliquées.
+
+```
+
+---
 ## Pour le cours suivant 
 
 Nous avons vu précédemment `useState` qui est un hook, il existe une multitude de hook.
