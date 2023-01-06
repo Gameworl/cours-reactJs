@@ -465,7 +465,7 @@ le projet react-router
 
 Nous allons voir comment faire en sorte de créer une navigation sur notre application.
 
-```
+```diff
 + Récupérer le projet react-router
 
 + Les fichiers sont en .tsx, pourquoi ? 
