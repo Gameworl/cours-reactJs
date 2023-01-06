@@ -305,7 +305,100 @@ Le hook `useEffect` est utilisé pour enregistrer la valeur de count dans la con
  + Ajouter un useEffect qui se lance uniquement lors d'une condition spécifique
 
  ```
+ 
+--- 
 
+## UseEffect
+
+```diff
+
++ A quoi sert le useEffect ? 
+
+```
+
+
+### UseEffect à l'ancienne
+
+Si l'on développe en "Class" alors nous utilisons 
+```js
+ componentDidMount() {    document.title = `You clicked ${this.state.count} times`;  }  
+ componentDidUpdate() {    document.title = `You clicked ${this.state.count} times`;  }
+```
+Cela nous permet de faire automatiquement une action quand notre composant est monté et quand on l'update
+
+```js
+class Example extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+  }
+
+  componentDidMount() {    
+    document.title = `You clicked ${this.state.count} times`; 
+     }  
+  
+  componentDidUpdate() {   
+     document.title = `You clicked ${this.state.count} times`;  
+     }
+
+  render() {
+    return (
+      <div>
+        <p>You clicked {this.state.count} times</p>
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+          Click me
+        </button>
+      </div>
+    );
+  }
+}
+```
+
+### UseEffect de nos jours
+
+Comme vous le savez, la méthode de développement en "Class" n'est plus d'actualité. Nous préférons les "function".
+Dans un souci de lisibilité et d'efficacité, il fut décidé de remplacer `componentDidMount` `componentDidUpdate` avec `UseEffect`. 
+
+```js
+import React, { useState, useEffect } from 'react';
+function Example() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {    
+    document.title = `You clicked ${count} times`;  });
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+```
+
+Contrairement à componentDidMount ou componentDidUpdate, les actions du useEffect ne bloquent pas le refresh la page. Notre application est ainsi plus réactive.
+
+### Quelques informations suplémentaires
+
+- Vous pouvez créer autant de UseEffect que vous voulez.
+- Vous pouvez rajouter des dépendances au UseEffect pour que celui-ci ce déclenche à un moment précis.
+
+```js
+useEffect(() => {
+  document.title = `You clicked ${count} times`;
+}, [count]); // Only re-run the effect if count changes
+```
+
+```diff
+
++ Mettez en place un UseEffect et comprenez comment celui-ci fonctionne.
+
+```
+
+---
 
 ## Travail
 
