@@ -444,7 +444,7 @@ Il arrive quelques fois qu'un projet soit inutilisable suite à des erreurs dans
 Par exemple, prenons notre projet tictactoe, un de mes collègues me l'a envoyer, mais je ne peux pas le lancer à cause de plusieurs erreurs.
 
 ```diff
-+ Faites le nécessaire pour que le projet fonctionne et indique les erreurs que vous avez trouvées. 
++ Faites le nécessaire pour que le projet fonctionne et indiquer les erreurs que vous avez trouvées. 
 ```
 
 Pour qu'il soit compréhensible, nous allons appliquer ce qu'on appelle des bonnes pratiques.
