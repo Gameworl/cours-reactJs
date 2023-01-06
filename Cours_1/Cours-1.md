@@ -460,6 +460,27 @@ Il existe une multitude de bonnes pratiques, elles servent à produire un code d
 ```
 
 ---
+la navigation sur site web
+le projet react-router
+
+Nous allons voir comment faire en sorte de créer une navigation sur notre application.
+
+```
++ Récupérer le projet react-router
+
++ Les fichiers sont en .tsx, pourquoi ? 
+
++ Dans le projet, les commentaires vous expliqueront comment fonctionne la navigation et ses fonctionnalités. 
+
+- site web pour l'api : https://pokeapi.co/
+
++ Ajouter une route permettant d'avoir la liste des baies dans pokemon 
+
++ Ajouter une route permettant d'avoir description d'une baie
+
++ Ajouter une route pour savoir quel pokemon je peux trouver dans les environs de "cerulean-city-area"
+```
+---
 ## Pour le cours suivant 
 
 Nous avons vu précédemment `useState` qui est un hook, il existe une multitude de hook.
