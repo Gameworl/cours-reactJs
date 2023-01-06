@@ -482,8 +482,4 @@ Nous allons voir comment faire en sorte de créer une navigation sur notre appli
 
 + Ajouter une route pour savoir quel pokemon je peux trouver dans les environs de "cerulean-city-area"
 ```
----
-## Pour le cours suivant 
 
-Nous avons vu précédemment `useState` qui est un hook, il existe une multitude de hook.
-Pour le prochain cours, vous allez devoir écrire un morceau de code qui mettra en pratique le hook qui vous sera attribué et vous présenterez celui-ci en début du prochain cours.
