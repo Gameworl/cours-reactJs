@@ -540,7 +540,7 @@ console.log(greet("John"));
 ```diff
 + Que faut-il modifier pour que notre projet puisse comprendre les .tsx
 
-+ Un nouveau fichier a été créer tsconfig.json. A quoi sert-il ? Pour notre projet en react que faut-il utilisé ? Pourquoi c'est ceux-la ?  
++ Un nouveau fichier à été créé "tsconfig.json". A quoi sert-il ? Pour notre projet en react que faut-il utiliser ? Pourquoi ceux-la ?  
 
 + Modifier votre projet chifoumi en .tsx
 
