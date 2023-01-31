@@ -483,3 +483,79 @@ Nous allons voir comment faire en sorte de créer une navigation sur notre appli
 + Ajouter une route pour savoir quel pokemon je peux trouver dans les environs de "cerulean-city-area"
 ```
 
+## Le découpage en atomic Design 
+
+L’approche Atomic Design est la suivante : partir du plus petit (l’atome) pour concevoir plus grand (la page ou l’écran). 
+Les éléments de base de l’interface sont conçus en premier, de manière générique, puis assemblés pour concevoir les molécules, 
+les organismes et finalement les pages ou les écrans.
+
+L'atomic design est utiliser souvent dans le cas où l'on se retrouve avec une même page qui a des modifications mineurs (textes, images).
+
+Prenons par exemple cette page (cf. tableau), nous pouvons distinguer plusieurs éléments tels qu'un personnage, un bandeau, un fond, un texte, etc.
+
+
+- Un atome va être par exemple une image, celle-ci sera uniquement affichée et rien de plus. Il n'y a aucune logique.
+- une molécule va être un ensemble d'atomes, toujours sans logique.
+- un organisme est un ensemble de molécules et d'atomes auquel on a rajouté de la logique.
+- Une page ou écran rassemble les éléments vus précédemment.
+
+
+```diff
+Dans notre chifoumi :
+
++ Définir ce que va être un atome 
+
++ Définir ce que va être une molécule
+
++ Définir ce que va être un organisme
+
++ Définir ce que va être un écran
+
++ Modifier le en appliquant l'atomic design
+```
+
+## Le typeScript 
+
+### La différence etre .js et .tsx
+.js est un fichier JavaScript, un langage de programmation populaire utilisé pour développer des applications web. .tsx est un fichier TypeScript, une extension de JavaScript qui ajoute des fonctionnalités de typage statique pour aider à prévenir les erreurs de programmation. 
+
+En .js
+```js
+function greet(name) {
+  return "Hello, " + name;
+}
+
+console.log(greet("John"));
+```
+
+En .tsx
+```tsx
+function greet(name: string): string {
+  return "Hello, " + name;
+}
+
+console.log(greet("John"));
+```
+
+```diff
++ Que faut-il modifier pour que notre projet puisse comprendre les .tsx
+
++ Un nouveau fichier a été créer tsconfig.json. A quoi sert-il ? Pour notre projet en react que faut-il utilisé ? Pourquoi c'est ceux-la ?  
+
++ Modifier votre projet chifoumi en .tsx
+
+```
+
+## Mirage Js
+![Alt Text](https://media2.giphy.com/media/l41lVeag0sl65q5AQ/giphy.gif?cid=ecf05e47rihg3pymofzkbiefqjvvxiz3p2kcqt4winlswr9x&rid=giphy.gif&ct=g)
+
+Alors non, on va pas parler de ce mirage là !!! 
+
+Mais plutot de celui-ci ![MirageJS](https://miragejs.com/)  
+
+```diff
++ Qu'est ce que Mirage JS
+
++ Suivez le tutoriel de celui-ci 
+
+```
