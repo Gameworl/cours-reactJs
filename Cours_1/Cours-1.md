@@ -551,7 +551,7 @@ console.log(greet("John"));
 
 Alors non, on va pas parler de ce mirage là !!! 
 
-Mais plutot de celui-ci ![MirageJS](https://miragejs.com/)  
+Mais plutot de celui-ci https://miragejs.com/
 
 ```diff
 + Qu'est ce que Mirage JS
